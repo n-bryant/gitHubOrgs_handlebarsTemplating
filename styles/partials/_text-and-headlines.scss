@@ -1,0 +1,46 @@
+body {
+  color: $slate;
+  font: 16px/1.6 Helvetica;
+}
+
+header {
+  color: $lightGrey;
+  font-size: 3rem;
+  font-weight: 800;
+
+  span {
+    font-weight: 200;
+  }
+}
+
+.query-container {
+  font-size: 1.5rem;
+  font-weight: 800;
+    span {
+      font-weight: 200;
+    }
+}
+
+a {
+  color: $slate;
+  text-decoration: none;
+}
+
+.org-name {
+  font-weight: 600;
+}
+.org-description {
+  font-style: italic;
+}
+
+input {
+  font-size: 2rem;
+
+  &[type="submit"] {
+    color: $lightGrey;
+
+    &:active {
+      color: $slate;
+    }
+  }
+}

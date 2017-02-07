@@ -1,0 +1,51 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <title>GitHub Orgs</title>
+    <link rel="stylesheet" href="styles/main.css">
+  </head>
+  <body>
+    <header class="is-centered">
+      <h1><span>Git</span>Hub Orgs</h1>
+    </header>
+    <main>
+      <section class="search-container is-flex">
+        <form class="search-form" autocomplete="off">
+          <input class="search-field is-centered" type="text" name="user-name" placeholder="Search..." required>
+          <input type="submit" value="'Git' Orgs... Get it?">
+        </form>
+        <div class="query-container is-hidden">
+          <h2><span class="query"></span>Organizations</h2>
+        </div>
+      </section>
+      <section class="oops is-hidden">
+        <div class="org-container is-flex">
+          <image class="org-avatar" src="https://s3.amazonaws.com/kandipatternspatterns/misc/14259_nope.png">
+          <div class="org-details-container is-centered">
+            <span class="org-name">No organizations found!</span>
+            <p class="org-description">oh no!</p>
+          </div>
+        </div>
+      </section>
+      <section class="orgs-list-container">
+        <!-- Orgs Templates -->
+      </section>
+    </main>
+
+    <!-- Handlebars Template -->
+    <script id="org-template" type="text/x-handlebars-template">
+      <a href="{{url}}" target="_blank"><div class="org-container is-flex">
+        <image class="org-avatar" src="{{avatar}}">
+        <div class="org-details-container is-centered">
+          <span class="org-name">{{name}}</span>
+          <p class="org-description">{{description}}</p>
+        </div>
+      </div></a>
+    </script>
+    <script src="js/vendor/jquery-3.1.1.min.js"></script>
+    <script src="js/vendor/handlebars-v4.0.5.js"></script>
+    <script src="js/app.js"></script>
+  </body>
+</html>

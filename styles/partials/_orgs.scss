@@ -1,0 +1,38 @@
+.orgs-list-container {
+  margin: 0 auto;
+  padding: .5rem;
+  width: 60%;
+}
+
+.oops {
+  @extend .orgs-list-container;
+  animation: shake .5s ease;
+}
+
+.org-container {
+  align-items: center;
+  background: #cfcfcf;
+  background: -webkit-linear-gradient(left, $lightGrey, $medGrey, $slate);
+  background: -o-linear-gradient(right, $lightGrey, $medGrey, $slate);
+  background: -moz-linear-gradient(right, $lightGrey, $medGrey, $slate);
+  background: linear-gradient(to right, $lightGrey, $medGrey, $slate);
+  border-radius: 10px;
+  justify-content: left;
+  margin: 0 auto 1rem auto;
+  padding: 1rem;
+  transition: transform .75s ease;
+  width: 85%;
+
+  .org-avatar {
+    width: 15%;
+  }
+
+  .org-details-container {
+    margin: 0 auto;
+  }
+
+  &:hover {
+    transform: translateX(5%);
+    transition: transform .5s ease;
+  }
+}

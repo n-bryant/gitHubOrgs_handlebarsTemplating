@@ -1,0 +1,21 @@
+.is-flex {
+  display: flex;
+}
+
+.is-centered {
+  text-align: center;
+}
+
+.is-hidden {
+  display: none;
+}
+
+@keyframes shake {
+  25% {
+    transform: translateX(-5%);
+  }
+  75% {
+    transform: translateX(5%);
+  }
+
+}

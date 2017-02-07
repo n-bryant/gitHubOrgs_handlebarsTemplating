@@ -1,0 +1,29 @@
+.search-container {
+  align-items: center;
+  flex-direction: column;
+  justify-content: center;
+  padding: .5rem;
+  .search-form {
+    margin: 0 auto;
+
+    input {
+      display: block;
+      margin-bottom: .5rem;
+      width: 100%;
+
+      &[type="submit"] {
+        background: $slate;
+        border: 2px solid $medGrey;
+        border-radius: 5px;
+
+        &:hover {
+          cursor: pointer;
+        }
+        &:active {
+          background: $lightGrey;
+          border: 2px solid $slate;
+        }
+      }
+    }
+  }
+}

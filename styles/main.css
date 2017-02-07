@@ -1,0 +1,163 @@
+/* http://meyerweb.com/eric/tools/css/reset/
+   v2.0 | 20110126
+   License: none (public domain)
+*/
+img {
+  border: 0;
+  height: auto;
+  max-width: 100%;
+  width: 100%; }
+
+*, *:before, *:after {
+  box-sizing: border-box; }
+
+html, body, div, span, applet, object, iframe,
+h1, h2, h3, h4, h5, h6, p, blockquote, pre,
+a, abbr, acronym, address, big, cite, code,
+del, dfn, em, img, ins, kbd, q, s, samp,
+small, strike, strong, sub, sup, tt, var,
+b, u, i, center,
+dl, dt, dd, ol, ul, li,
+fieldset, form, label, legend,
+table, caption, tbody, tfoot, thead, tr, th, td,
+article, aside, canvas, details, embed,
+figure, figcaption, footer, header, hgroup,
+menu, nav, output, ruby, section, summary,
+time, mark, audio, video {
+  margin: 0;
+  padding: 0;
+  border: 0;
+  font-size: 100%;
+  font: inherit;
+  vertical-align: baseline; }
+
+/* HTML5 display-role reset for older browsers */
+article, aside, details, figcaption, figure,
+footer, header, hgroup, menu, nav, section {
+  display: block; }
+
+body {
+  line-height: 1; }
+
+ol, ul {
+  list-style: none; }
+
+blockquote, q {
+  quotes: none; }
+
+blockquote:before, blockquote:after,
+q:before, q:after {
+  content: '';
+  content: none; }
+
+table {
+  border-collapse: collapse;
+  border-spacing: 0; }
+
+body {
+  color: #333;
+  font: 16px/1.6 Helvetica; }
+
+header {
+  color: #f0f0f0;
+  font-size: 3rem;
+  font-weight: 800; }
+  header span {
+    font-weight: 200; }
+
+.query-container {
+  font-size: 1.5rem;
+  font-weight: 800; }
+  .query-container span {
+    font-weight: 200; }
+
+a {
+  color: #333;
+  text-decoration: none; }
+
+.org-name {
+  font-weight: 600; }
+
+.org-description {
+  font-style: italic; }
+
+input {
+  font-size: 2rem; }
+  input[type="submit"] {
+    color: #f0f0f0; }
+    input[type="submit"]:active {
+      color: #333; }
+
+body {
+  background: #f0f0f0; }
+
+header {
+  background: #333;
+  margin-bottom: 1rem; }
+
+.search-container {
+  align-items: center;
+  flex-direction: column;
+  justify-content: center;
+  padding: .5rem; }
+  .search-container .search-form {
+    margin: 0 auto; }
+    .search-container .search-form input {
+      display: block;
+      margin-bottom: .5rem;
+      width: 100%; }
+      .search-container .search-form input[type="submit"] {
+        background: #333;
+        border: 2px solid #aaa;
+        border-radius: 5px; }
+        .search-container .search-form input[type="submit"]:hover {
+          cursor: pointer; }
+        .search-container .search-form input[type="submit"]:active {
+          background: #f0f0f0;
+          border: 2px solid #333; }
+
+.orgs-list-container, .oops {
+  margin: 0 auto;
+  padding: .5rem;
+  width: 60%; }
+
+.oops {
+  animation: shake .5s ease; }
+
+.org-container {
+  align-items: center;
+  background: #cfcfcf;
+  background: -webkit-linear-gradient(left, #f0f0f0, #aaa, #333);
+  background: -o-linear-gradient(right, #f0f0f0, #aaa, #333);
+  background: -moz-linear-gradient(right, #f0f0f0, #aaa, #333);
+  background: linear-gradient(to right, #f0f0f0, #aaa, #333);
+  border-radius: 10px;
+  justify-content: left;
+  margin: 0 auto 1rem auto;
+  padding: 1rem;
+  transition: transform .75s ease;
+  width: 85%; }
+  .org-container .org-avatar {
+    width: 15%; }
+  .org-container .org-details-container {
+    margin: 0 auto; }
+  .org-container:hover {
+    transform: translateX(5%);
+    transition: transform .5s ease; }
+
+.is-flex {
+  display: flex; }
+
+.is-centered {
+  text-align: center; }
+
+.is-hidden {
+  display: none; }
+
+@keyframes shake {
+  25% {
+    transform: translateX(-5%); }
+  75% {
+    transform: translateX(5%); } }
+
+/*# sourceMappingURL=main.css.map */
