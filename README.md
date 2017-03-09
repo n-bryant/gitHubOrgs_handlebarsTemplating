@@ -1,2 +1,2 @@
-# tiy-fee-week5-day2-gitHubOrgs
-https://n-bryant.github.io/tiy-fee-week5-day2-gitHubOrgs/
+# gitHubOrgs_handlebarsTemplating
+https://n-bryant.github.io/gitHubOrgs_handlebarsTemplating/
